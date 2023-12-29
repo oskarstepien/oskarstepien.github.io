@@ -1,0 +1,21 @@
+.instagram {
+  background-color: hsla(0, 100%, 50%, 1);
+  background-image: radial-gradient(at 1% 2%, hsla(268, 97%, 52%, 1) 0px, transparent 80%),
+    radial-gradient(at 100% 0%, hsla(311, 99%, 50%, 1) 0px, transparent 80%),
+    radial-gradient(at 1% 98%, hsla(45, 100%, 50%, 1) 0px, transparent 80%),
+    radial-gradient(at 99% 99%, hsla(327, 98%, 51%, 1) 0px, transparent 80%);
+}
+
+.tilt:hover {
+  box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.3);
+  transform-origin: right top;
+  transform: perspective(1000px) rotateX(10deg) rotateY(-10deg);
+  transition: 0.3s ease;
+}
+
+.tilt:nth-child(2):hover {
+  box-shadow: -15px 15px 50px rgba(0, 0, 0, 0.3);
+  transform-origin: left top;
+  transform: perspective(1000px) rotateX(10deg) rotateY(10deg) rotateZ(-2deg);
+  transition: 0.3s ease;
+}
